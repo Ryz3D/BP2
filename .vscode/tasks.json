@@ -1,0 +1,19 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "start",
+			"problemMatcher": [],
+			"label": "debug",
+			"detail": "set PORT=3000 && craco start"
+		},
+		{
+			"type": "shell",
+			"label": "deploy",
+			"command": "npm run build && firebase deploy",
+			"args": [],
+			"problemMatcher": []
+		},
+	]
+}
